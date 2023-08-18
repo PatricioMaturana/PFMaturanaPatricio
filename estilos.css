@@ -121,6 +121,28 @@ iframe{
 }
 /*Estilos multimedia fin*/
 
+/*Estilos noticias inicio*/
+.container-fluid,
+.contenedor_imagen{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-fluid p{
+    text-align: justify;
+}
+.imagen_noticia{
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    /* overflow: hidden;*/
+    text-align: center;
+    background-image:  url(imagen/giordano_bruno_biografia.jpg);    
+    background-size: cover;/*contain;/*cover;*/
+    background-position:top;
+    background-attachment:fixed;
+    background-repeat: no-repeat;  
+}
+/*Estilos noticias fin*/
 
 @media only screen and (max-width:576px){
     /*destaca con un bloque las opciones del menu hamburguesa, y cambia el color para visualizar mejor*/
