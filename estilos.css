@@ -1,4 +1,4 @@
-/*Estilos generales inicio*/
+/*Estilos generales*/
 * {
     margin: 0;
     padding: 0;
@@ -54,38 +54,69 @@ body {
 /*Estilos generales fin*/
 
 /*Estilos index inicio*/
-.contenido {
-    /* background-color: blueviolet;*/
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 180px);
-    grid-template-areas: "div1 div1 div1 div2"
-        "div1 div1 div1 div2"
-        "div3 div3 div3 div3";
-    grid-gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+.contenido_ppal{
+    margin: 0px;
+    text-align: justify;
+    background-image:  url(Imagen/giordano_bruno_biografia.jpg);    
+    background-size: cover;/*contain;/*cover;*/
+    background-position:center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;  
 }
-.articulos {
-    border: 2px solid #000;
+.sub-contenido{
+    margin: 0px;
+    background-color:rgba(51, 51, 51, 0.562);
+    color: white;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    padding-bottom: 210px;
+}
+.sub-contenido2{
+    margin: 0px;
+    background-color:rgba(51, 51, 51, 0.562);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-bottom: 116px;
+}
+.img-aside1{
+    background-image: url(Imagen/giordano_bruno_b.jpg);
     background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    filter: grayscale(100%);
-    transition: all 0.6s;
+    height: 200px;
+    border-radius: 49%;
+    margin-bottom: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.articulo1 {
-    grid-area: div1;
+.img-aside2{
+    background-image: url(Imagen/muerte_GB.jpg);
+    background-size: cover;
+    height: 200px;   
+    border-radius:49px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.articulo2 {
-    grid-area: div2;
+.cita{
+    margin: 0px;
+    background-color:rgba(51, 51, 51, 0.562);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
 }
-
-.articulo3 {
-    grid-area: div3;
+.card-body{
+    background: rgb(46, 43, 43);
+    color: white;
+}
+.fondo{
+    margin: 0px;
+    text-align: justify;
+    background-image:  url(Imagen/giordano_bruno_biografia.jpg);  
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
 }
 /*estilos index fin*/
 
@@ -126,23 +157,44 @@ iframe{
 .contenedor_imagen{
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .container-fluid p{
     text-align: justify;
 }
 .imagen_noticia{
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
+   /* position: relative;
+    padding-bottom: 56.25%;*/ 
+    height: 350px;
     /* overflow: hidden;*/
-    text-align: center;
     background-image:  url(imagen/giordano_bruno_biografia.jpg);    
     background-size: cover;/*contain;/*cover;*/
-    background-position:top;
+    background-position:center;
     background-attachment:fixed;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
+    border-radius: 8px; 
 }
 /*Estilos noticias fin*/
+
+/*Estilos Frases inicia*/
+.precamino{
+    /* overflow: hidden;*/
+    background-image:  url(imagen/precamino.png);    
+    background-size: cover;
+    background-position:top;
+    border-radius: 8px; 
+}
+@font-face {
+    font-family:The California;
+    src: url(/fuentes/TheCalifornia.ttf);
+}
+.frases h2,
+.frases p{
+    font-family: The California;
+    font-size: 50px;
+}
+
+/*Estilos Frases fin*/
 
 @media only screen and (max-width:576px){
     /*destaca con un bloque las opciones del menu hamburguesa, y cambia el color para visualizar mejor*/
@@ -151,4 +203,33 @@ iframe{
         color:hwb(36 97% 1%);
     }
     /*Fin - destaca con un bloque las opciones del menu hamburguesa*/
+
+    /*index inicia*/
+    .inicio .row .mtdiv{
+        margin-top: 10px;
+    }
+    .contenido_ppal, .aside{
+        border-radius: 6px;
+        padding-bottom: 20px;
+    }
+    /*Index final*/
+
+    /*Frases inicia*/
+    .frases{
+        padding: 60px 20px 60px 20px;
+    }
+    /*Frases final*/
+}
+@media only screen and (min-width:576px){
+    /*index inicia*/
+    .inicio .row{
+    margin-top: 1dvh;
+    }
+    /*Index inicia*/
+
+    /*Frases inicia*/
+    .frases{
+        padding: 80px 80px 80px 80px;
+    }
+    /*Frases final*/
 }
