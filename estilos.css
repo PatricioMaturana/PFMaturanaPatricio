@@ -170,7 +170,7 @@ iframe{
 }
 .imagen_noticia{ 
     height: 350px;
-    background-image: url(Imagen/inquisicion_GB.png);    
+    background-image: url(Imagen/inquisicion_GB.jpg);    
     background-size: cover;/*contain;/*cover;*/
     background-position:center;
     background-attachment:fixed;
@@ -182,7 +182,7 @@ iframe{
 /*Estilos Frases inicia*/
 .precamino{
     /* overflow: hidden;*/
-    background-image:  url(imagen/precamino.png);    
+    background-image:  url(imagen/precamino.jpg);    
     background-size: cover;
     background-position:top;
     border-radius: 8px; 
