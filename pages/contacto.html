@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--bootstrap inicia-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap inicia-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <!--bootstrap fin-->
-        <!-- fontawesome inicia -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- fontawesome fin -->
-        <link rel="shortcut icon" href="../Imagen/GiordanoBruno_logo.ico" alt="Giordano" type="image/x-icon">
-        <link rel="stylesheet" href="../estilos.css">
-        <title>Giordano Bruno</title>
+    <!--bootstrap fin-->
+    <!-- fontawesome inicia -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fontawesome fin -->
+    <link rel="shortcut icon" href="../Imagen/GiordanoBruno_logo.ico" alt="Giordano" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Giordano Bruno</title>
 </head>
+
 <body>
     <!--El nav lo reemplace con la etiqueta header, agregue un rounded-3 para redondear esquinas del contenedor header-->
     <!--se agrego background negro, y un borde-->
     <header class="navbar navbar-expand-sm bg-black rounded-3 border border-black-subtle navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand align-middle" href="#"><img class="logo" SRC="../Imagen/GiordanoBruno_logo.jpg"
+            <a class="navbar-brand align-middle" href="../index.html"><img class="logo" SRC="../Imagen/GiordanoBruno_logo.jpg"
                     alt="Giordando Bruno"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -36,43 +40,123 @@
                         <a class="nav-link" href="../pages/noticias.html">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/frasescitas.html">Frases </a> </li> 
+                        <a class="nav-link" href="../pages/frasescitas.html">Frases </a> </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto </a> </li> 
-                </ul> 
-            </div> 
+                        <a class="nav-link" href="#">Contacto </a> </li>
+                </ul>
+            </div>
         </div>
-    </header> 
-    <div class="contenedorf">
-    <section class="img-contacto">        
-    </section>
-    <div class="formulario">
-        <form action="#">
-            
-            <label for="nombre">ingresa tu nombre:
-                <input type="text" name="nombre">
-            </label><br>
-            <label for="edad">ingresa tu edad:
-                <input type="number" placeholder="Edad">
-            </label><br>
-            <textarea name="" id="" cols="60" rows="10" placeholder="comentarios"></textarea><br>
+    </header>
+    <div class="container-fluid text-white bg-black">
+        <div class="row contacto">
+            <div class="col-sm-12 col-md-9 formulario rounded-start border">
+                <form class="row g-3 needs-validation was-validated" novalidate="">
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required="">
+                        <div class="valid-feedback">
+                            Se ve bien!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required="">
+                        <div class="valid-feedback">
+                            Se ve bien!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">E-mail</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required="">
+                            <div class="invalid-feedback">
+                                Favor ingrese un correo valido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="validationCustom03" required="">
+                        <div class="invalid-feedback">
+                            Favor ingrese una ciudad.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Región</label>
+                        <select class="form-select" id="validationCustom04" required="">
+                            <option selected="" disabled="" value="">Elija una región...</option>
+                            <option> I Región de Tarapacá </option>
+                            <option> X Región de los Lagos </option>
+                            <option> XI Región Aysén del General Carlos Ibáñez del Campo </option>
+                            <option> XII Región de Magallanes y la Antártica Chilena </option>
+                            <option> XIII Región Metropolitana de Santiago </option>
+                            <option> XIV Región de los Ríos </option>
+                            <option> XV Región de Arica y Parinacota </option>
+                            <option> XVI Región de Ñuble </option>
+                            <option> II Región de Antofagasta </option>
+                            <option> III Región de Atacama </option>
+                            <option> IV Región de Coquimbo </option>
+                            <option> V Región de Valparaíso </option>
+                            <option> VI Región del Libertador General Bernardo O’Higgins </option>
+                            <option> VII Región del Maule </option>
+                            <option> VIII Región del Bíobío </option>
+                            <option> IX Región de la Aracucanía </option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Favor ingrese una región.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Código postal</label>
+                        <input type="text" class="form-control" id="validationCustom05" required="">
+                        <div class="invalid-feedback">
+                            Ingrese un dato valido..
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="validationCustom06" class="form-label">Comentario</label>
+                        <input type="text" class="form-control" id="validationCustom03" required="">
+                        <div class="invalid-feedback">
+                            Favor ingrese un comentario.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+                            <label class="form-check-label" for="invalidCheck">
+                                Acepte los terminos
+                            </label>
+                            <div class="invalid-feedback">
+                                debe estar de acuerdo antes de enviar.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-0 col-md-3 imagen rounded-end border">
+            </div>
+        </div>
 
-            <input type="submit" value="ENVIAR"><input type="reset" value="LIMPIAR">
-        </form>
     </div>
     <footer class="footer">
         <img class="logo" SRC="../Imagen/GiordanoBruno_logo.jpg" alt="Giordando Bruno">
         <div class="redes">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://web.facebook.com/cgiordanobruno"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/GioBruno1600"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/p/CIiyD5_B3Op/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://cl.linkedin.com/in/giordano-bruno-705042168"><i class="fa-brands fa-linkedin"></i></a>
             <p>Copyright© Todos los Derechos Reservados.</p>
-        </div>
+         </div>
     </footer>
-</div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
 </script>
+
 </html>

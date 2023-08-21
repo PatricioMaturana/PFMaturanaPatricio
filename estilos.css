@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     margin: 10px auto;
     background: rgb(46, 43, 43);
     color: #000;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', ;
 }
 .footer {
     height: 110px;
@@ -70,6 +70,12 @@ body {
     border-radius: 10px;
     padding: 0px 20px 0px 20px;
     padding-bottom: 210px;
+}
+p.Letra-capital::first-letter{
+	font-size:5em;
+	/*font-family:serif;*/
+	margin:8px;
+	float:left;
 }
 .sub-contenido2{
     margin: 0px;
@@ -163,10 +169,7 @@ iframe{
     text-align: justify;
 }
 .imagen_noticia{
-   /* position: relative;
-    padding-bottom: 56.25%;*/ 
     height: 350px;
-    /* overflow: hidden;*/
     background-image:  url(imagen/giordano_bruno_biografia.jpg);    
     background-size: cover;/*contain;/*cover;*/
     background-position:center;
@@ -193,8 +196,20 @@ iframe{
     font-family: The California;
     font-size: 50px;
 }
-
 /*Estilos Frases fin*/
+
+/*Estilos contacto inicio*/
+.contacto .formulario{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contacto .imagen{
+    /* overflow: hidden;*/
+    background-image:  url(imagen/imagen_contacto.png);    
+    background-size: cover;
+    background-position:top;
+}
+/*Estilos contacto fin*/
 
 @media only screen and (max-width:576px){
     /*destaca con un bloque las opciones del menu hamburguesa, y cambia el color para visualizar mejor*/
@@ -208,7 +223,7 @@ iframe{
     .inicio .row .mtdiv{
         margin-top: 10px;
     }
-    .contenido_ppal, .aside{
+    .contenido_ppal, .aside, .contacto div{
         border-radius: 6px;
         padding-bottom: 20px;
     }
