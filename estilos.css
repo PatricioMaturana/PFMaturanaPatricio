@@ -170,7 +170,7 @@ iframe{
 }
 .imagen_noticia{ 
     height: 350px;
-    background-image:  url(imagen/giordano_bruno_biografia.jpg);    
+    background-image: url(Imagen/inquisicion_GB.png);    
     background-size: cover;/*contain;/*cover;*/
     background-position:center;
     background-attachment:fixed;
