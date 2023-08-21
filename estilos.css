@@ -168,7 +168,7 @@ iframe{
 .container-fluid p{
     text-align: justify;
 }
-.imagen_noticia{
+.imagen_noticia{ 
     height: 350px;
     background-image:  url(imagen/giordano_bruno_biografia.jpg);    
     background-size: cover;/*contain;/*cover;*/
