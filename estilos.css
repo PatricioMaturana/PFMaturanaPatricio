@@ -57,7 +57,7 @@ body {
 .contenido_ppal{
     margin: 0px;
     text-align: justify;
-    background-image:  url(Imagen/giordano_bruno_biografia.jpg);    
+    background-image:  url(./Imagen/giordano_bruno_biografia.jpg);    
     background-size: cover;/*contain;/*cover;*/
     background-position:center;
     background-attachment:fixed;
@@ -87,7 +87,7 @@ p.Letra-capital::first-letter{
     padding-bottom: 116px;
 }
 .img-aside1{
-    background-image: url(Imagen/giordano_bruno_b.jpg);
+    background-image: url(./Imagen/giordano_bruno_b.jpg);
     background-size: cover;
     height: 200px;
     border-radius: 49%;
@@ -96,7 +96,7 @@ p.Letra-capital::first-letter{
     margin-bottom: 20px;
 }
 .img-aside2{
-    background-image: url(Imagen/muerte_GB.jpg);
+    background-image: url(./Imagen/muerte_GB.jpg);
     background-size: cover;
     height: 200px;   
     border-radius:49px;
@@ -118,7 +118,7 @@ p.Letra-capital::first-letter{
 .fondo{
     margin: 0px;
     text-align: justify;
-    background-image:  url(Imagen/giordano_bruno_biografia.jpg);  
+    background-image:  url(./Imagen/giordano_bruno_biografia.jpg);  
     background-size: cover;
     background-position:center;
     background-attachment:fixed;
@@ -170,7 +170,7 @@ iframe{
 }
 .imagen_noticia{ 
     height: 350px;
-    background-image: url(Imagen/inquisicion_GB.jpg);    
+    background-image: url(./Imagen/inquisicion_GB.jpg);    
     background-size: cover;/*contain;/*cover;*/
     background-position:center;
     background-attachment:fixed;
@@ -182,14 +182,14 @@ iframe{
 /*Estilos Frases inicia*/
 .precamino{
     /* overflow: hidden;*/
-    background-image:  url(imagen/precamino.jpg);    
+    background-image:  url(./imagen/precamino.jpg);    
     background-size: cover;
     background-position:top;
     border-radius: 8px; 
 }
 @font-face {
     font-family:The California;
-    src: url(/fuentes/TheCalifornia.ttf);
+    src: url(./fuentes/TheCalifornia.ttf);
 }
 .frases h2,
 .frases p{
@@ -205,7 +205,7 @@ iframe{
 }
 .contacto .imagen{
     /* overflow: hidden;*/
-    background-image:  url(imagen/imagen_contacto.png);    
+    background-image:  url(./imagen/imagen_contacto.png);    
     background-size: cover;
     background-position:top;
 }
