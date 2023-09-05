@@ -14,14 +14,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- fontawesome fin -->
     <link rel="shortcut icon" href="../Imagen/GiordanoBruno_logo.ico" alt="Giordano" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Giordano Bruno</title>
 </head>
-
-<body>
-    <!--El nav lo reemplace con la etiqueta header, agregue un rounded-3 para redondear esquinas del contenedor header-->
+<body>   
+    <header class="header">
+        <div class="row">
+            <div class="col-12 temas">
+                <select>
+                    <option value="selected">Seleccione un theme</option>
+                    <option value="dark">Dark</option>
+                    <option value="light">Light</option>
+                </select>
+            </div>
+        </div>
+    </header>
+     <!--El nav lo reemplace con la etiqueta header, agregue un rounded-3 para redondear esquinas del contenedor header-->
     <!--se agrego background negro, y un borde-->
-    <header class="navbar navbar-expand-sm bg-black rounded-3 border border-black-subtle navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-black rounded-3 border border-black-subtle navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand align-middle" href="../index.html"><img class="logo" SRC="../Imagen/GiordanoBruno_logo.jpg"
                     alt="Giordando Bruno"></a>
@@ -46,7 +56,7 @@
                 </ul>
             </div>
         </div>
-    </header>
+    </nav>
     <div class="container-fluid precamino border">
         <div class="frases">
             <h2>FRASES Y CITAS</h2>

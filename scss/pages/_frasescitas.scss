@@ -1,0 +1,18 @@
+/*Estilos Frases inicia*/
+.precamino{
+    /* overflow: hidden;*/
+    background-image:  url(../imagen/precamino.jpg);    
+    background-size: cover;
+    background-position:top;
+    border-radius: 8px; 
+}
+@font-face {
+    font-family:The California;
+    src: url(../fuentes/TheCalifornia.ttf);
+}
+.frases h2,
+.frases p{
+    font-family: The California;
+    font-size: 50px;
+}
+/*Estilos Frases fin*/

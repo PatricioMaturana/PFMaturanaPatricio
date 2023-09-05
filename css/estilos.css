@@ -1,0 +1,324 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  padding: 2px;
+  border-radius: 40px;
+  border: 2px solid white;
+  /* rgba(40, 40, 40, 0.852);*/
+}
+
+/*inicia Código efecto logo*/
+.logo {
+  animation-duration: 5s;
+  animation-name: logo;
+  animation-iteration-count: infinite;
+}
+
+.container-fluid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container-fluid p {
+  text-align: justify;
+}
+
+@keyframes logo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg);
+  }
+}
+/*Fin Código efecto logo*/
+@media only screen and (max-width: 576px) {
+  /*destaca con un bloque las opciones del menu hamburguesa, y cambia el color para visualizar mejor*/
+  .nav-item :hover {
+    background-color: hwb(43 31% 8%/0.167);
+    color: hwb(36 97% 1%);
+  }
+  /*Fin - destaca con un bloque las opciones del menu hamburguesa*/
+  /*index inicia*/
+  .contenido_ppal, .aside .inicio {
+    border-radius: 0px;
+    padding-bottom: 20px;
+  }
+  .inicio .row .mtdiv {
+    margin-top: 10px;
+  }
+  /*Frases inicia*/
+  .frases {
+    padding: 60px 20px 60px 20px;
+  }
+  /*Frases final*/
+  /*Noticias inicia*/
+  .formulario {
+    border-radius: 6px;
+    padding-bottom: 20px;
+  }
+  /*Noticias final*/
+}
+@media only screen and (min-width: 576px) {
+  /*index inicia*/
+  .inicio .row {
+    margin-top: 1dvh;
+  }
+  /*Index final*/
+  /*Frases inicia*/
+  .frases {
+    padding: 80px 80px 80px 80px;
+  }
+  /*Frases final*/
+}
+/*F9FBE7*/
+/*ECCDB4*/
+header {
+  text-align: center;
+  padding: 12px;
+}
+header .temas {
+  justify-content: center;
+  z-index: 1000;
+  background-color: rgb(46, 43, 43);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  padding: 0.3em;
+}
+header .temas select {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  line-height: 1.5;
+  color: orange;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  width: 150px;
+}
+header .temas select option {
+  color: #040D12;
+}
+
+body {
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px auto;
+  background: rgb(46, 43, 43);
+  color: #000;
+  font-family: serif, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+}
+
+.footer {
+  height: 110px;
+  background-color: #040D12;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+  color: orange;
+  text-align: right;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer p {
+  font-size: 10px;
+}
+.footer .redes {
+  font-size: 30px;
+}
+
+.navbar {
+  background-color: #040D12;
+}
+
+.nav-link {
+  color: orange;
+  padding: 20px;
+  background-color: #040D12;
+  display: flex;
+  justify-content: center;
+}
+
+.contenido_ppal {
+  margin: 0px;
+  text-align: justify;
+  background-image: url(../Imagen/giordano_bruno_biografia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.sub-contenido {
+  margin: 0px;
+  background-color: rgba(51, 51, 51, 0.562);
+  color: white;
+  border-radius: 10px;
+  padding: 0px 20px 0px 20px;
+  padding-bottom: 210px;
+}
+
+p.Letra-capital::first-letter {
+  font-size: 5em;
+  /*font-family:serif;*/
+  margin: 8px;
+  float: left;
+}
+
+.sub-contenido2 {
+  margin: 0px;
+  background-color: rgba(51, 51, 51, 0.562);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-bottom: 116px;
+}
+
+.img-aside1 {
+  background-image: url(../Imagen/giordano_bruno_b.jpg);
+  background-size: cover;
+  height: 200px;
+  border-radius: 49%;
+  margin-bottom: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.img-aside2 {
+  background-image: url(../Imagen/muerte_GB.jpg);
+  background-size: cover;
+  height: 200px;
+  border-radius: 49px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cita {
+  margin: 0px;
+  background-color: rgba(51, 51, 51, 0.562);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  background: rgb(46, 43, 43);
+  color: white;
+}
+
+.fondo {
+  margin: 0px;
+  text-align: justify;
+  background-image: url(../Imagen/giordano_bruno_biografia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/*Estilos contacto inicio*/
+.contacto .formulario {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contacto .imagen {
+  /* overflow: hidden;*/
+  background-image: url(../imagen/imagen_contacto.png);
+  background-size: cover;
+  background-position: top;
+}
+
+/*Estilos contacto fin*/
+/*Estilos Frases inicia*/
+.precamino {
+  /* overflow: hidden;*/
+  background-image: url(../imagen/precamino.jpg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 8px;
+}
+
+@font-face {
+  font-family: The California;
+  src: url(../fuentes/TheCalifornia.ttf);
+}
+.frases h2,
+.frases p {
+  font-family: The California;
+  font-size: 50px;
+}
+
+/*Estilos Frases fin*/
+/*Estilos multimedia inicio*/
+.contenedor_carrusel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.embed-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+iframe {
+  position: absolute;
+  /*top: 0;
+  left: 0;*/
+  width: 100%;
+  height: 100%;
+}
+
+.parrafo {
+  margin-bottom: 20px !important;
+  padding: 20px;
+}
+
+.parrafo h2 {
+  text-align: center;
+}
+
+.parrafo p {
+  text-align: justify;
+}
+
+/*Estilos multimedia fin*/
+/*Estilos noticias inicio*/
+.contenedor_imagen {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.imagen_noticia {
+  height: 350px;
+  background-image: url(../Imagen/inquisicion_GB.jpg);
+  background-size: cover; /*contain;/*cover;*/
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+/*Estilos noticias fin*/
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,69 @@
+$background_body:rgb(46, 43, 43);/*F9FBE7*/
+$background_estandar:#040D12;/*ECCDB4*/
+
+
+header{
+    text-align: center;
+    padding: 12px;
+    .temas{
+        justify-content: center;
+        z-index: 1000;
+        background-color:$background_body;
+        position:fixed;
+        left: 0px;
+        top: 0px;
+        padding:.3em;
+        select{
+            border: 1px solid #ccc;
+            overflow: hidden;
+            line-height: 1.5;
+            color: orange;
+            background: transparent;
+            border: none;
+            font-size: 14px;  
+            width: 150px;
+            option{
+                color:#040D12
+            }
+        }
+    }
+}
+
+body {
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    background: $background_body;
+    color: #000;
+    font-family: serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', ;
+}
+.footer {
+    height: 110px;
+    background-color: $background_estandar;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: orange;
+    text-align: right;
+    font-size: 10px;
+    display: flex;   
+    justify-content:space-between;
+    p{
+        font-size: 10px;
+    }
+    .redes {
+        font-size: 30px;
+    }
+}
+
+.navbar{
+    background-color: $background_estandar;
+}
+
+.nav-link{
+    color:orange;
+    padding: 20px;
+    background-color: $background_estandar;
+    display: flex;
+    justify-content: center;
+}

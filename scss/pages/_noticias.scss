@@ -1,0 +1,17 @@
+/*Estilos noticias inicio*/
+.contenedor_imagen{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imagen_noticia{ 
+    height: 350px;
+    background-image: url(../Imagen/inquisicion_GB.jpg);    
+    background-size: cover;/*contain;/*cover;*/
+    background-position:center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    border-radius: 8px; 
+}
+/*Estilos noticias fin*/
