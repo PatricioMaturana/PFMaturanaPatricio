@@ -2,7 +2,7 @@
 .contenido_ppal{
     margin: 0px;
     text-align: justify;
-    background-image: url(/Imagen/giordano_bruno_biografia.jpg);    
+    background-image: url(./Imagen/giordano_bruno_biografia.jpg);    
     background-size: cover;
     background-position:center;
     background-attachment:fixed;
@@ -32,7 +32,7 @@ p.Letra-capital::first-letter{
     padding-bottom: 116px;
 }
 .img-aside1{
-    background-image: url(../Imagen/giordano_bruno_b.jpg);
+    background-image: url(./Imagen/giordano_bruno_b.jpg);
     background-size: cover;
     height: 200px;
     border-radius: 49%;
@@ -41,7 +41,7 @@ p.Letra-capital::first-letter{
     margin-bottom: 20px;
 }
 .img-aside2{
-    background-image: url(../Imagen/muerte_GB.jpg);
+    background-image: url(./Imagen/muerte_GB.jpg);
     background-size: cover;
     height: 200px;   
     border-radius:49px;
@@ -63,7 +63,7 @@ p.Letra-capital::first-letter{
 .fondo{
     margin: 0px;
     text-align: justify;
-    background-image:  url(../Imagen/giordano_bruno_biografia.jpg);  
+    background-image:  url(./Imagen/giordano_bruno_biografia.jpg);  
     background-size: cover;
     background-position:center;
     background-attachment:fixed;
