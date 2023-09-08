@@ -46,7 +46,7 @@
   }
 }
 /*Fin Código efecto logo*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 579px) {
   /*destaca con un bloque las opciones del menu hamburguesa, y cambia el color para visualizar mejor*/
   .nav-item :hover {
     background-color: hwb(43 31% 8%/0.167);
@@ -55,7 +55,6 @@
   /*Fin - destaca con un bloque las opciones del menu hamburguesa*/
   /*index inicia*/
   .contenido_ppal, .aside .inicio {
-    border-radius: 0px;
     padding-bottom: 20px;
   }
   .inicio .row .mtdiv {
@@ -68,7 +67,6 @@
   /*Frases final*/
   /*Noticias inicia*/
   .formulario {
-    border-radius: 6px;
     padding-bottom: 20px;
   }
   /*Noticias final*/
@@ -127,7 +125,6 @@ body {
   height: 110px;
   background-color: #040D12;
   padding: 20px;
-  border-radius: 8px;
   border: 1px solid white;
   color: orange;
   text-align: right;
@@ -316,7 +313,6 @@ iframe {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  border-radius: 8px;
 }
 
 /*Estilos noticias fin*/

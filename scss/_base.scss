@@ -47,7 +47,7 @@
 /*Fin Código efecto logo*/
 
 
-@media only screen and (max-width:576px){
+@media only screen and (max-width:579px){
     /*destaca con un bloque las opciones del menu hamburguesa, y cambia el color para visualizar mejor*/
     .nav-item :hover{
         background-color: hwb(43 31% 8% / 0.167);
@@ -57,7 +57,6 @@
 
     /*index inicia*/
     .contenido_ppal, .aside .inicio{
-        border-radius: 0px;
         padding-bottom: 20px;
     }
     .inicio .row .mtdiv{
@@ -72,10 +71,11 @@
 
     /*Noticias inicia*/
     .formulario{
-        border-radius: 6px;
         padding-bottom: 20px;
     }
     /*Noticias final*/
+   
+
 }
 
 @media only screen and (min-width:576px){
@@ -83,7 +83,7 @@
     .inicio .row{
     margin-top: 1dvh;
     }
-     /*Index final*/
+    /*Index final*/
 
     /*Frases inicia*/
     .frases{
@@ -91,4 +91,6 @@
     }
     /*Frases final*/
 }
+
+
 
