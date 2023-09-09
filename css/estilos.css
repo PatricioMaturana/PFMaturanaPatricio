@@ -62,7 +62,7 @@
   }
   /*Frases inicia*/
   .frases {
-    padding: 60px 20px 60px 20px;
+    padding: 60px 0px 60px 0px;
   }
   /*Frases final*/
 }
@@ -74,7 +74,7 @@
   /*Index final*/
   /*Frases inicia*/
   .frases {
-    padding: 80px 80px 80px 80px;
+    padding: 60px 10px 60px 10px;
   }
   /*Frases final*/
 }
@@ -161,7 +161,7 @@ body {
   background-color: rgba(51, 51, 51, 0.562);
   color: white;
   border-radius: 10px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 5px 0px 5px;
   padding-bottom: 210px;
 }
 
@@ -176,7 +176,7 @@ p.Letra-capital::first-letter {
   margin: 0px;
   background-color: rgba(51, 51, 51, 0.562);
   color: white;
-  padding: 20px;
+  padding: 0px 5px 0px 5px;
   border-radius: 10px;
   margin-top: 10px;
   padding-bottom: 116px;
@@ -245,7 +245,6 @@ p.Letra-capital::first-letter {
   background-image: url(../Imagen/precamino.jpg);
   background-size: cover;
   background-position: top;
-  border-radius: 8px;
 }
 
 @font-face {
@@ -255,14 +254,13 @@ p.Letra-capital::first-letter {
 .frases h2,
 .frases p {
   font-family: The California;
-  font-size: 50px;
+  font-size: 33px;
 }
 
 /*Estilos Frases fin*/
 /*Estilos multimedia inicio*/
 .contenedor_carrusel {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .embed-responsive {
@@ -282,10 +280,10 @@ iframe {
 
 .parrafo {
   margin-bottom: 20px !important;
-  padding: 20px;
+  padding: 5px;
 }
 
-.parrafo h2 {
+.parrafo h1 {
   text-align: center;
 }
 
