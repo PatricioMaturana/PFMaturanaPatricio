@@ -4,13 +4,14 @@ html[data-theme=light] {
   --background_header:white; /*#9AC5F4;*/
   --background_footer:#FFEEBB;
   --background_nav:#FFEEBB;
-  --background-side:#FFEEBB;
+  --background_side:#FFEEBB;
   --background_side_trasparencia:rgba(51, 51, 51, 0.562);
   --background_form_contacto:#FFEEBB;
-  --color-nav:#450703;
-  --color-footer:#450703;
-  --color-borde:#450703;
+  --color_nav:#450703;
+  --color_footer:#450703;
+  --color_borde:#450703;
   --color_form_contacto:black;
+  --color_header:black;
 }
 
 html[data-theme=dark] {
@@ -18,13 +19,14 @@ html[data-theme=dark] {
   --background_header:rgb(46, 43, 43); /*F9FBE7*/
   --background_footer:#040D12; /*ECCDB4*/
   --background_nav:#040D12;
-  --background-side:rgb(46, 43, 43);
+  --background_side:rgb(46, 43, 43);
   --background_side_trasparencia:rgba(51, 51, 51, 0.562);
   --background_form_contacto:#040D12;
-  --color-nav:orange;
-  --color-footer:orange;
-  --color-borde:white;
+  --color_nav:orange;
+  --color_footer:orange;
+  --color_borde:white;
   --color_form_contacto:black;
+  --color_header:white;
 }
 
 * {
@@ -117,21 +119,22 @@ header {
   padding: 12px;
 }
 header .temas {
-  /* border: #000;*/
-  justify-content: center;
   z-index: 1000;
   background-color: var(--background_header);
   position: fixed;
   left: 0px;
   top: 0px;
   padding: 0.3em;
-}
-header .temas select {
-  overflow: hidden;
+  color: var(--color_header);
   line-height: 1;
-  background: transparent;
-  border: none;
-  font-size: 15px;
+  /*
+  select{
+      overflow: hidden;
+      line-height: 1;
+      background: transparent;
+      border: none;
+      font-size: 15px;
+  } */
 }
 
 .footer {
@@ -139,8 +142,8 @@ header .temas select {
   background-color: var(--background_footer);
   padding: 20px;
   /*border: $color-borde;1px solid white;*/
-  border: 1px solid var(--color-borde) !important;
-  color: var(--color-footer);
+  border: 1px solid var(--color_borde) !important;
+  color: var(--color_footer);
   text-align: right;
   font-size: 10px;
   display: flex;
@@ -155,11 +158,11 @@ header .temas select {
 
 .navbar {
   background-color: var(--background_nav);
-  border: 1px solid var(--color-borde) !important;
+  border: 1px solid var(--color_borde) !important;
 }
 
 .nav-link {
-  color: var(--color-nav);
+  color: var(--color_nav);
   padding: 20px;
   background-color: var(--background_nav);
   display: flex;
@@ -174,12 +177,12 @@ header .temas select {
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  border: 1px solid var(--color-borde) !important;
+  border: 1px solid var(--color_borde) !important;
 }
 
 .aside {
-  border: 1px solid var(--color-borde) !important;
-  background-color: var(--background-side);
+  border: 1px solid var(--color_borde) !important;
+  background-color: var(--background_side);
 }
 
 .sub-contenido {
@@ -243,7 +246,7 @@ p.Letra-capital::first-letter {
 
 .fondo {
   margin: 0px;
-  border: 1px solid var(--color-borde) !important;
+  border: 1px solid var(--color_borde) !important;
   text-align: justify;
   background-image: url(../Imagen/giordano_bruno_biografia.jpg);
   background-size: cover;
@@ -255,7 +258,7 @@ p.Letra-capital::first-letter {
 /*Estilos contacto inicio*/
 .form-contacto {
   background: var(--background_form_contacto);
-  border: 1px solid var(--color-borde);
+  border: 1px solid var(--color_borde);
 }
 
 .contacto .formulario {
@@ -266,7 +269,7 @@ p.Letra-capital::first-letter {
 
 .contacto .imagen {
   /* overflow: hidden;*/
-  border: 1px solid var(--color-borde) !important;
+  border: 1px solid var(--color_borde) !important;
   background-image: url(../imagen/imagen_contacto.png);
   background-size: cover;
   background-position: top;
@@ -279,7 +282,7 @@ p.Letra-capital::first-letter {
   background-image: url(../Imagen/precamino.jpg);
   background-size: cover;
   background-position: top;
-  border: 1px solid var(--color-borde) !important;
+  border: 1px solid var(--color_borde) !important;
 }
 
 @font-face {
@@ -296,7 +299,7 @@ p.Letra-capital::first-letter {
 /*Estilos multimedia inicio*/
 .contenedor_carrusel {
   margin-top: 20px;
-  border: 1px solid var(--color-borde) !important;
+  border: 1px solid var(--color_borde) !important;
 }
 
 .embed-responsive {
@@ -317,7 +320,7 @@ iframe {
 .parrafo {
   margin-bottom: 20px !important;
   padding: 5px;
-  border: 1px solid var(--color-borde) !important;
+  border: 1px solid var(--color_borde) !important;
 }
 
 .parrafo h1 {
@@ -331,10 +334,10 @@ iframe {
 /*Estilos multimedia fin*/
 /*Estilos noticias inicio*/
 .noticia {
-  border: 1px solid var(--color-borde) !important;
+  border: 1px solid var(--color_borde) !important;
 }
 .noticia .border {
-  border: 1px solid var(--color-borde) !important;
+  border: 1px solid var(--color_borde) !important;
 }
 
 /*Estilos noticias fin*//*# sourceMappingURL=main.css.map */
