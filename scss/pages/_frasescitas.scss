@@ -11,9 +11,11 @@ $color_borde:var(--color_borde);
     font-family:The California;
     src: url(../fuentes/TheCalifornia.ttf);
 }
-.frases h2,
-.frases p{
-    font-family: The California;
-    font-size: 33px;
+.frases{
+    h1,h2,
+    p{
+        font-family: The California;
+        font-size: 33px;
+    }
 }
 /*Estilos Frases fin*/
