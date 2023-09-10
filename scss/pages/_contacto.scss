@@ -1,13 +1,21 @@
+$background_form_contacto:var(--background_form_contacto);
+$color_form_contacto:var(--color_form_contacto);
 /*Estilos contacto inicio*/
+.form-contacto{
+    background: $background_form_contacto;
+    border:1px solid $color-borde;
+}
 .contacto{
     .formulario{
         padding-top: 20px;
         padding-bottom: 20px;
+        color:$color_form_contacto;
     }
 }
 .contacto{ 
     .imagen{
     /* overflow: hidden;*/
+    border:1px solid $color-borde!important;
     background-image:  url(../imagen/imagen_contacto.png);    
     background-size: cover;
     background-position:top;

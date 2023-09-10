@@ -2,7 +2,7 @@
 
 .contenedor_carrusel{
     margin-top: 20px;
-
+    border:1px solid $color-borde!important;
 }
 
 .embed-responsive{
@@ -22,6 +22,7 @@ iframe{
 .parrafo{
     margin-bottom: 20px !important;
     padding: 5px;
+    border:1px solid $color-borde!important;
 }
 .parrafo h1{
     text-align: center;

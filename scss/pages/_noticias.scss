@@ -1,4 +1,10 @@
+$color-borde:var(--color-borde);
 /*Estilos noticias inicio*/
-
+.noticia{
+    border:1px solid $color-borde!important;
+    .border{
+        border:1px solid $color-borde!important;
+    }
+}
 
 /*Estilos noticias fin*/

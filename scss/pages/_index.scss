@@ -1,3 +1,12 @@
+$background_body:var(--background_body);
+$background_header:var(--background_header);
+$background_footer:var(--background_footer);
+$background_nav:var(--background_nav);
+$background-side:var(--background-side);
+$background_side_trasparencia:var(--background_side_trasparencia);
+$color-nav:var(--color-nav);
+$color-footer:var(--color-footer);
+$color-borde:var(--color-borde);
 
 .contenido_ppal{
     margin: 0px;
@@ -7,10 +16,15 @@
     background-position:top;
     background-attachment:fixed;
     background-repeat: no-repeat;  
+    border:1px solid $color-borde!important;
+}
+.aside{
+    border:1px solid $color-borde!important;
+    background-color: $background-side;
 }
 .sub-contenido{
     margin: 0px;
-    background-color:rgba(51, 51, 51, 0.562);
+    background-color:$background_side_trasparencia;
     color: white;
     border-radius: 10px;
     padding: 0px 5px 0px 5px;
@@ -24,7 +38,7 @@ p.Letra-capital::first-letter{
 }
 .sub-contenido2{
     margin: 0px;
-    background-color:rgba(51, 51, 51, 0.562);
+    background-color:$background_side_trasparencia;
     color: white;
     padding: 0px 5px 0px 5px;
     border-radius: 10px;
@@ -62,6 +76,7 @@ p.Letra-capital::first-letter{
 }
 .fondo{
     margin: 0px;
+    border:1px solid $color-borde!important;
     text-align: justify;
     background-image:  url(../Imagen/giordano_bruno_biografia.jpg);  
     background-size: cover;

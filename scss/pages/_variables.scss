@@ -3,11 +3,25 @@
     --background_header:rgb(46, 43, 43); /*F9FBE7*/
     --background_footer:#040D12;/*ECCDB4*/
     --background_nav:#040D12;
+    --background-side:rgb(46, 43, 43);
+    --background_side_trasparencia:rgba(51, 51, 51, 0.562);
+    --background_form_contacto:#040D12;
+    --color-nav:orange;
+    --color-footer:orange;
+    --color-borde:white;
+    --color_form_contacto:black;
 }
 
 :root[tema-defecto="light"]{
-    --background_body:violet;
-    --background_header:violet;
-    --background_footer:#040D12;/*ECCDB4*/
-    --background_nav:white;
+    --background_body:white;
+    --background_header:white;/*#9AC5F4;*/
+    --background_footer:#FFEEBB;
+    --background_nav:#FFEEBB;
+    --background-side:#FFEEBB;
+    --background_side_trasparencia:rgba(51, 51, 51, 0.562);
+    --background_form_contacto:#FFEEBB;
+    --color-nav:#450703;
+    --color-footer:#450703;
+    --color-borde:#450703;
+    --color_form_contacto:black;
 }

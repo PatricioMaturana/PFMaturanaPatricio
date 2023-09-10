@@ -1,9 +1,11 @@
 /*Estilos Frases inicia*/
+$color-borde:var(--color-borde);
 .precamino{
     /* overflow: hidden;*/
     background-image:  url(../Imagen/precamino.jpg);    
     background-size: cover;
     background-position:top;
+    border:1px solid $color-borde!important;
 }
 @font-face {
     font-family:The California;
