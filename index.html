@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" tema-defecto="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,7 @@
     <!-- fontawesome fin -->
     <link rel="shortcut icon" href="./Imagen/GiordanoBruno_logo.ico" alt="Giordano" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilos.css">
+    <script defer src="./scss/js/modificaTema.js"></script>
     <title>Giordano Bruno</title>
 </head>
 
@@ -22,11 +23,19 @@
     <header class="header">
         <div class="row">
             <div class="col-12 temas">
+            <!--   
+                <button class="btn-tema btn-dark" aria-label="Modo dark">
+                    <i class="luna fa-solid fa-moon"></i>
+                </button>
+                <button class="btn-tema btn-light" aria-label="Modo light">
+                    <i class="sol fa-regular fa-sun "></i> 
+                </button>
+            -->
                 <select>
-                    <option value="selected">Seleccione un theme</option>
-                    <option value="dark">Dark</option>
-                    <option value="light">Light</option>
+                    <option class="btn-dark" value="dark">Tema Dark</option>
+                    <option class="btn-light" value="light">Tema Light</option>
                 </select>
+                
             </div>
         </div>
     </header>

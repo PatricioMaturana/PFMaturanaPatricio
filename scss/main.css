@@ -1,4 +1,18 @@
 @charset "UTF-8";
+:root[tema-defecto=dark] {
+  --background_body:rgb(46, 43, 43); /*F9FBE7*/
+  --background_header:rgb(46, 43, 43); /*F9FBE7*/
+  --background_footer:#040D12; /*ECCDB4*/
+  --background_nav:#040D12;
+}
+
+:root[tema-defecto=light] {
+  --background_body:violet;
+  --background_header:violet;
+  --background_footer:#040D12; /*ECCDB4*/
+  --background_nav:white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,47 +89,40 @@
   }
   /*Frases final*/
 }
-/*F9FBE7*/
-/*ECCDB4*/
+body {
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px auto;
+  background: var(--background_body);
+  color: #000;
+  font-family: serif, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+}
+
 header {
   text-align: center;
   padding: 12px;
 }
 header .temas {
+  /* border: #000;*/
   justify-content: center;
   z-index: 1000;
-  background-color: rgb(46, 43, 43);
+  background-color: var(--background_header);
   position: fixed;
   left: 0px;
   top: 0px;
   padding: 0.3em;
 }
 header .temas select {
-  border: 1px solid #ccc;
   overflow: hidden;
-  line-height: 1.5;
-  color: orange;
+  line-height: 1;
   background: transparent;
   border: none;
-  font-size: 14px;
-  width: 150px;
-}
-header .temas select option {
-  color: #040D12;
-}
-
-body {
-  width: 90%;
-  max-width: 1000px;
-  margin: 10px auto;
-  background: rgb(46, 43, 43);
-  color: #000;
-  font-family: serif, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  font-size: 15px;
 }
 
 .footer {
   height: 110px;
-  background-color: #040D12;
+  background-color: var(--background_footer);
   padding: 20px;
   border: 1px solid white;
   color: orange;
@@ -132,13 +139,13 @@ body {
 }
 
 .navbar {
-  background-color: #040D12;
+  background-color: var(--background_nav);
 }
 
 .nav-link {
   color: orange;
   padding: 20px;
-  background-color: #040D12;
+  background-color: var(--background_nav);
   display: flex;
   justify-content: center;
 }

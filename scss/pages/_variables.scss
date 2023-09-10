@@ -1,0 +1,13 @@
+:root[tema-defecto="dark"]{
+    --background_body:rgb(46, 43, 43);/*F9FBE7*/
+    --background_header:rgb(46, 43, 43); /*F9FBE7*/
+    --background_footer:#040D12;/*ECCDB4*/
+    --background_nav:#040D12;
+}
+
+:root[tema-defecto="light"]{
+    --background_body:violet;
+    --background_header:violet;
+    --background_footer:#040D12;/*ECCDB4*/
+    --background_nav:white;
+}
