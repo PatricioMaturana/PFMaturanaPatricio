@@ -8,6 +8,8 @@ $color_nav:var(--color_nav);
 $color_footer:var(--color_footer);
 $color_borde:var(--color_borde);
 $color_header:var(--color_header);
+$border_menu:var(--border_menu);
+$background_menu:var(--background_menu);
 
 body {
     width: 90%;
@@ -63,6 +65,10 @@ header{
 .navbar{
     background-color: $background_nav;
     border:1px solid $color_borde!important;
+    .navbar-toggler-icon{
+        border: 1px solid $border_menu!important;
+        background-color: $background_menu;
+    }
 }
 
 .nav-link{
