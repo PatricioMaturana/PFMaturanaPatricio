@@ -1,8 +1,19 @@
+/*Contiene estilos base que afecta todas las páginas.*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+
+.container-fluid{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    p{
+    text-align: justify;
+    }
 }
 
 .logo {
@@ -21,15 +32,6 @@
 	animation-iteration-count: infinite;
 }
 
-.container-fluid{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    p{
-    text-align: justify;
-    }
-}
-
 @keyframes logo{
 	from {
 		-webkit-transform: rotate(0deg);
@@ -46,7 +48,6 @@
 }
 /*Fin Código efecto logo*/
 
-
 @media only screen and (max-width:579px){
     /*destaca con un bloque las opciones del menu hamburguesa, y cambia el color para visualizar mejor*/
     .nav-item :hover{
@@ -62,6 +63,7 @@
     .inicio .row .mtdiv{
             margin-top: 10px;
         }
+    /*index final*/
 
     /*Frases inicia*/
     .frases{
@@ -83,6 +85,3 @@
     }
     /*Frases final*/
 }
-
-
-

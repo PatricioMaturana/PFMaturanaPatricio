@@ -1,3 +1,6 @@
+/*Contiene estilos que se utiliza fuertemente a la estructura web, etiquetas semanticas.*/
+
+/*Inicio: Variables que se utilizan en la pagina layauts*/
 $background_body:var(--background_body);
 $background_header:var(--background_header);
 $background_footer:var(--background_footer);
@@ -10,6 +13,7 @@ $color_borde:var(--color_borde);
 $color_header:var(--color_header);
 $border_menu:var(--border_menu);
 $background_menu:var(--background_menu);
+/*Final: Variables que se utilizan en la pagina layauts*/
 
 body {
     width: 90%;

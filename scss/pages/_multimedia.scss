@@ -1,5 +1,9 @@
 /*Estilos multimedia inicio*/
 
+/*Inicio: Variables que se utilizan en la pagina multimedia*/
+$color_borde:var(--color_borde);
+/*Fin: Variables que se utilizan en la pagina multimedia*/
+
 .contenedor_carrusel{
     margin-top: 20px;
     border:1px solid $color_borde!important;

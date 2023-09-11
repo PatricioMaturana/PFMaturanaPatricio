@@ -1,3 +1,6 @@
+/*Inicia estilos index*/
+
+/*Inicio: Variables que se utilizan en la pagina index*/
 $background_body:var(--background_body);
 $background_header:var(--background_header);
 $background_footer:var(--background_footer);
@@ -7,6 +10,7 @@ $background_side_trasparencia:var(--background_side_trasparencia);
 $color_nav:var(--color_nav);
 $color_footer:var(--color_footer);
 $color_borde:var(--color_borde);
+/*Fin: Variables que se utilizan en la pagina index*/
 
 .contenido_ppal{
     margin: 0px;
@@ -84,3 +88,4 @@ p.Letra-capital::first-letter{
     background-attachment:fixed;
     background-repeat: no-repeat;
 }
+/*Final estilos index*/

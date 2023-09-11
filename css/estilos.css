@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Declaración de variables, las cuales entregaran los colores de acuerdo al tema de fondo seleccionado.*/
 html[data-theme=dark] {
   --background_body:rgb(46, 43, 43); /*F9FBE7*/
   --background_header:rgb(46, 43, 43); /*F9FBE7*/
@@ -33,11 +34,21 @@ html[data-theme=light] {
   --background_menu:black;
 }
 
+/*Contiene estilos base que afecta todas las páginas.*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: serif, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+}
+
+.container-fluid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container-fluid p {
+  text-align: justify;
 }
 
 .logo {
@@ -54,15 +65,6 @@ html[data-theme=light] {
   animation-duration: 5s;
   animation-name: logo;
   animation-iteration-count: infinite;
-}
-
-.container-fluid {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.container-fluid p {
-  text-align: justify;
 }
 
 @keyframes logo {
@@ -94,6 +96,7 @@ html[data-theme=light] {
   .inicio .row .mtdiv {
     margin-top: 10px;
   }
+  /*index final*/
   /*Frases inicia*/
   .frases {
     padding: 60px 0px 60px 0px;
@@ -112,6 +115,9 @@ html[data-theme=light] {
   }
   /*Frases final*/
 }
+/*Contiene estilos que se utiliza fuertemente a la estructura web, etiquetas semanticas.*/
+/*Inicio: Variables que se utilizan en la pagina layauts*/
+/*Final: Variables que se utilizan en la pagina layauts*/
 body {
   width: 90%;
   max-width: 1000px;
@@ -172,6 +178,9 @@ header .temas {
   justify-content: center;
 }
 
+/*Inicia estilos index*/
+/*Inicio: Variables que se utilizan en la pagina index*/
+/*Fin: Variables que se utilizan en la pagina index*/
 .contenido_ppal {
   margin: 0px;
   text-align: justify;
@@ -258,7 +267,10 @@ p.Letra-capital::first-letter {
   background-repeat: no-repeat;
 }
 
+/*Final estilos index*/
 /*Estilos contacto inicio*/
+/*INICIO: Variables que se utilizan en la pagina contacto*/
+/*FIN: Variables que se utilizan en la pagina contacto*/
 .form-contacto {
   background: var(--background_form_contacto);
   border: 1px solid var(--color_borde);
@@ -280,6 +292,8 @@ p.Letra-capital::first-letter {
 
 /*Estilos contacto fin*/
 /*Estilos Frases inicia*/
+/*Inicio: Variables que se utilizan en la pagina frasescitas*/
+/*Fin: Variables que se utilizan en la pagina frasescitas*/
 .precamino {
   /* overflow: hidden;*/
   background-image: url(../Imagen/precamino.jpg);
@@ -300,6 +314,8 @@ p.Letra-capital::first-letter {
 
 /*Estilos Frases fin*/
 /*Estilos multimedia inicio*/
+/*Inicio: Variables que se utilizan en la pagina multimedia*/
+/*Fin: Variables que se utilizan en la pagina multimedia*/
 .contenedor_carrusel {
   margin-top: 20px;
   border: 1px solid var(--color_borde) !important;
@@ -334,6 +350,8 @@ iframe {
 
 /*Estilos multimedia fin*/
 /*Estilos noticias inicio*/
+/*Inicio: Variables que se utilizan en la pagina noticias*/
+/*Fin: Variables que se utilizan en la pagina noticias*/
 .noticia {
   border: 1px solid var(--color_borde) !important;
 }
