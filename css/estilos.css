@@ -285,7 +285,7 @@ p.Letra-capital::first-letter {
 .contacto .imagen {
   /* overflow: hidden;*/
   border: 1px solid var(--color_borde) !important;
-  background-image: url(../imagen/imagen_contacto.png);
+  background-image: url(/Imagen/imagen_contacto2.jpg);
   background-size: cover;
   background-position: top;
 }
