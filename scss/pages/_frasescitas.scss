@@ -7,7 +7,7 @@ $color_borde:var(--color_borde);
 .precamino{
     /* overflow: hidden;*/
     background-image:  url(../Imagen/precamino.jpg);    
-    background-size: cover;
+    background-size: cover; 
     background-position:top;
     border:1px solid $color_borde!important;
 }

@@ -6,7 +6,7 @@ $color_form_contacto:var(--color_form_contacto);
 $color_borde:var(--color_borde);
 /*FIN: Variables que se utilizan en la pagina contacto*/
 
-.form-contacto{
+.form-contacto{ 
     background: $background_form_contacto;
     border:1px solid $color_borde;
 }
