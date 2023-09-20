@@ -16,12 +16,16 @@ $background_menu:var(--background_menu);
 /*Final: Variables que se utilizan en la pagina layauts*/
 
 body {
-    width: 90%;
-    max-width: 1000px;
-    margin: 10px auto;
-    background: $background_body;
+    width: 98%;
+    /*max-width: 1000px;*/
+    margin: 5px auto;
+    /* background-color: $background_body;*/
+    background-image: linear-gradient($background_body, hwb(39 16% 45%), $background_body);/*$background_body;*/
     color: #000;
     font-family: serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', ;
+    text-shadow: 1px 1px 1px black;
+    /* background: radial-gradient(circle, rgb(46, 43, 43),$background_body,rgb(108, 129, 66), rgb(77, 42, 36),$background_body);*/
+    background: radial-gradient(circle,black,rgb(176, 122, 36),rgb(176, 122, 36),black,$background_body);
 }
 
 header{
@@ -51,7 +55,7 @@ header{
     display: flex;   
     justify-content:space-between;
     p{
-        font-size: 10px;
+        font-size: 16px;
     }
     .redes {
         font-size: 30px;
@@ -69,7 +73,8 @@ header{
 
 .nav-link{
     color:$color_nav;
-    padding: 20px;
+    text-shadow: 0px 0px 10px  #dbf707eb; 
+    /*padding: 20px;*/
     background-color: $background_nav;
     display: flex;
     justify-content: center;

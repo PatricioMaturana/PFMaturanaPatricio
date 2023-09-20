@@ -8,8 +8,8 @@
 }
 
 .container-fluid{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     p{
     text-align: justify;
@@ -30,6 +30,12 @@
 	animation-duration: 5s;
 	animation-name: logo;
 	animation-iteration-count: infinite;
+}
+
+.navbar-toggler{
+    color: orange;
+    border-radius: 5px;
+    border: 2px solid orange;
 }
 
 @keyframes logo{
@@ -56,15 +62,6 @@
     }
     /*Fin - destaca con un bloque las opciones del menu hamburguesa*/
 
-    /*index inicia*/
-    .contenido_ppal, .aside .inicio{
-        padding-bottom: 20px;
-    }
-    .inicio .row .mtdiv{
-            margin-top: 10px;
-        }
-    /*index final*/
-
     /*Frases inicia*/
     .frases{
         padding: 60px 0px 60px 0px;
@@ -73,12 +70,6 @@
 }
 
 @media only screen and (min-width:576px){
-    /*index inicia*/
-    .inicio .row{
-    margin-top: 1dvh;
-    }
-    /*Index final*/
-
     /*Frases inicia*/
     .frases{
         padding: 60px 10px 60px 10px;

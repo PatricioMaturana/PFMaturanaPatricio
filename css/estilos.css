@@ -11,7 +11,7 @@ html[data-theme=dark] {
   --color_nav:orange;
   --color_footer:orange;
   --color_borde:white;
-  --color_form_contacto:black;
+  --color_form_contacto:red;
   --color_header:white;
   --border_menu:white;
   --background_menu:black;
@@ -43,8 +43,8 @@ html[data-theme=light] {
 }
 
 .container-fluid {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .container-fluid p {
@@ -65,6 +65,12 @@ html[data-theme=light] {
   animation-duration: 5s;
   animation-name: logo;
   animation-iteration-count: infinite;
+}
+
+.navbar-toggler {
+  color: orange;
+  border-radius: 5px;
+  border: 2px solid orange;
 }
 
 @keyframes logo {
@@ -89,14 +95,6 @@ html[data-theme=light] {
     color: hwb(36 97% 1%);
   }
   /*Fin - destaca con un bloque las opciones del menu hamburguesa*/
-  /*index inicia*/
-  .contenido_ppal, .aside .inicio {
-    padding-bottom: 20px;
-  }
-  .inicio .row .mtdiv {
-    margin-top: 10px;
-  }
-  /*index final*/
   /*Frases inicia*/
   .frases {
     padding: 60px 0px 60px 0px;
@@ -104,11 +102,6 @@ html[data-theme=light] {
   /*Frases final*/
 }
 @media only screen and (min-width: 576px) {
-  /*index inicia*/
-  .inicio .row {
-    margin-top: 1dvh;
-  }
-  /*Index final*/
   /*Frases inicia*/
   .frases {
     padding: 60px 10px 60px 10px;
@@ -119,12 +112,16 @@ html[data-theme=light] {
 /*Inicio: Variables que se utilizan en la pagina layauts*/
 /*Final: Variables que se utilizan en la pagina layauts*/
 body {
-  width: 90%;
-  max-width: 1000px;
-  margin: 10px auto;
-  background: var(--background_body);
+  width: 98%;
+  /*max-width: 1000px;*/
+  margin: 5px auto;
+  /* background-color: $background_body;*/
+  background-image: linear-gradient(var(--background_body), hwb(39 16% 45%), var(--background_body)); /*$background_body;*/
   color: #000;
   font-family: serif, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  text-shadow: 1px 1px 1px black;
+  /* background: radial-gradient(circle, rgb(46, 43, 43),$background_body,rgb(108, 129, 66), rgb(77, 42, 36),$background_body);*/
+  background: radial-gradient(circle, black, rgb(176, 122, 36), rgb(176, 122, 36), black, var(--background_body));
 }
 
 header {
@@ -155,7 +152,7 @@ header .temas {
   justify-content: space-between;
 }
 .footer p {
-  font-size: 10px;
+  font-size: 16px;
 }
 .footer .redes {
   font-size: 30px;
@@ -172,7 +169,8 @@ header .temas {
 
 .nav-link {
   color: var(--color_nav);
-  padding: 20px;
+  text-shadow: 0px 0px 10px rgba(219, 247, 7, 0.9215686275);
+  /*padding: 20px;*/
   background-color: var(--background_nav);
   display: flex;
   justify-content: center;
@@ -195,6 +193,7 @@ header .temas {
 .aside {
   border: 1px solid var(--color_borde) !important;
   background-color: var(--background_side);
+  background: radial-gradient(circle, #140e2b, #00205b, #004d92, #0081b8, #00b4fc);
 }
 
 .sub-contenido {
@@ -202,8 +201,7 @@ header .temas {
   background-color: var(--background_side_trasparencia);
   color: white;
   border-radius: 10px;
-  padding: 0px 5px 0px 5px;
-  padding-bottom: 210px;
+  padding: 0px 10px 10px 10px;
 }
 
 p.Letra-capital::first-letter {
@@ -215,29 +213,23 @@ p.Letra-capital::first-letter {
 
 .sub-contenido2 {
   margin: 0px;
-  background-color: var(--background_side_trasparencia);
   color: white;
-  padding: 0px 5px 0px 5px;
-  border-radius: 10px;
   margin-top: 10px;
-  padding-bottom: 116px;
 }
 
 .img-aside1 {
-  background-image: url(../Imagen/giordano_bruno_b.jpg);
+  background-image: url(../Imagen/Fondos_de_Galaxia.jpg);
   background-size: cover;
+  background-position: center;
   height: 200px;
-  border-radius: 49%;
-  margin-bottom: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border-radius: 2%;
 }
 
 .img-aside2 {
   background-image: url(../Imagen/muerte_GB.jpg);
   background-size: cover;
   height: 200px;
-  border-radius: 49px;
+  border-radius: 2%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -246,7 +238,7 @@ p.Letra-capital::first-letter {
   margin: 0px;
   background-color: rgba(51, 51, 51, 0.562);
   border-radius: 10px;
-  padding: 20px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -309,7 +301,8 @@ p.Letra-capital::first-letter {
 .frases h1, .frases h2,
 .frases p {
   font-family: The California;
-  font-size: 33px;
+  font-size: 50px;
+  text-shadow: 1px 2px 0px white;
 }
 
 /*Estilos Frases fin*/
@@ -317,7 +310,7 @@ p.Letra-capital::first-letter {
 /*Inicio: Variables que se utilizan en la pagina multimedia*/
 /*Fin: Variables que se utilizan en la pagina multimedia*/
 .contenedor_carrusel {
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid var(--color_borde) !important;
 }
 
@@ -337,7 +330,7 @@ iframe {
 }
 
 .parrafo {
-  margin-bottom: 20px !important;
+  margin-bottom: 10px;
   padding: 5px;
   border: 1px solid var(--color_borde) !important;
 }

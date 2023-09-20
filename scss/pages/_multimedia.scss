@@ -5,7 +5,7 @@ $color_borde:var(--color_borde);
 /*Fin: Variables que se utilizan en la pagina multimedia*/
 
 .contenedor_carrusel{
-    margin-top: 20px;
+    margin-top: 10px;
     border:1px solid $color_borde!important;
 }
 
@@ -24,7 +24,7 @@ iframe{
     height: 100%;
 }
 .parrafo{
-    margin-bottom: 20px !important;
+    margin-bottom: 10px;
     padding: 5px;
     border:1px solid $color_borde!important;
     h1{

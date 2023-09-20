@@ -25,14 +25,14 @@ $color_borde:var(--color_borde);
 .aside{
     border:1px solid $color_borde!important;
     background-color: $background_side;
+    background: radial-gradient(circle, #140e2b, #00205b, #004d92, #0081b8, #00b4fc);
 }
 .sub-contenido{
     margin: 0px;
     background-color:$background_side_trasparencia;
     color: white;
     border-radius: 10px;
-    padding: 0px 5px 0px 5px;
-    padding-bottom: 210px;
+    padding: 0px 10px 10px 10px;
 }
 p.Letra-capital::first-letter{
 	font-size:5em;
@@ -42,27 +42,21 @@ p.Letra-capital::first-letter{
 }
 .sub-contenido2{
     margin: 0px;
-    background-color:$background_side_trasparencia;
     color: white;
-    padding: 0px 5px 0px 5px;
-    border-radius: 10px;
     margin-top: 10px;
-    padding-bottom: 116px;
 }
 .img-aside1{
-    background-image: url(../Imagen/giordano_bruno_b.jpg);
+    background-image: url(../Imagen/Fondos_de_Galaxia.jpg);
     background-size: cover;
+    background-position: center;
     height: 200px;
-    border-radius: 49%;
-    margin-bottom: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-radius: 2%;
 }
 .img-aside2{
     background-image: url(../Imagen/muerte_GB.jpg);
     background-size: cover;
     height: 200px;   
-    border-radius:49px;
+    border-radius:2%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -70,7 +64,7 @@ p.Letra-capital::first-letter{
     margin: 0px;
     background-color:rgba(51, 51, 51, 0.562);
     border-radius: 10px;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     justify-content:space-between;
 }
