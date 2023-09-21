@@ -16,11 +16,23 @@ $color_borde:var(--color_borde);
     src: url(../fuentes/TheCalifornia.ttf);
 }
 .frases{
+    padding: 30px;
     h1,h2,
     p{
         font-family: The California;
         font-size: 50px;
         text-shadow: 1px 2px 0px white;
     }
+    .fc{
+            /* escala inicial del 1 (sin zoom) */
+            transform: scale(1);
+            /* Transición suave para un efecto de zoom gradual */
+            transition: transform 0.3s ease;
+        }
+    .fc:hover {
+            /* Aplica un zoom al pasar el puntero del mouse */
+            transform: scale(1.04);
+            z-index: 2000;
+        }
 }
 /*Estilos Frases fin*/

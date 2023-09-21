@@ -68,6 +68,20 @@ p.Letra-capital::first-letter{
     display: flex;
     justify-content:space-between;
 }
+.cita{
+    .card{
+        /* Establece una escala inicial del 1 (sin zoom) */
+        transform: scale(1);
+        /* Transición suave para un efecto de zoom gradual */
+        transition: transform 0.3s ease;
+    }
+    .card:hover {
+        /* Aplica un zoom del 150% al pasar el puntero del mouse */
+        transform: scale(1.1);
+        z-index: 2000;
+    }
+}
+
 .card-body{
     background: rgb(46, 43, 43);
     color: white;

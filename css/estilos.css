@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*Declaración de variables, las cuales entregaran los colores de acuerdo al tema de fondo seleccionado.*/
-html[data-theme=dark] {
+html[data-theme=normal] {
   --background_body:rgb(46, 43, 43);
   --background_header:rgb(46, 43, 43);
-  --background_footer:#040D12; /*ECCDB4*/
+  --background_footer:#040D12;
   --background_nav:#040D12;
   --background_side:rgb(46, 43, 43);
   --background_side_trasparencia:rgba(51, 51, 51, 0.562);
@@ -14,23 +14,6 @@ html[data-theme=dark] {
   --color_form_contacto:red;
   --color_header:white;
   --border_menu:white;
-  --background_menu:black;
-}
-
-html[data-theme=light] {
-  --background_body:white;
-  --background_header:white; /*#9AC5F4;*/
-  --background_footer:#FFEEBB;
-  --background_nav:#FFEEBB;
-  --background_side:#FFEEBB;
-  --background_side_trasparencia:rgba(51, 51, 51, 0.562);
-  --background_form_contacto:#FFEEBB;
-  --color_nav:#450703;
-  --color_footer:#450703;
-  --color_borde:#450703;
-  --color_form_contacto:black;
-  --color_header:black;
-  --border_menu:#450703;
   --background_menu:black;
 }
 
@@ -124,21 +107,22 @@ body {
   background: radial-gradient(circle, black, rgb(176, 122, 36), rgb(176, 122, 36), black, var(--background_body));
 }
 
-header {
-  text-align: center;
-  padding: 12px;
+/*
+header{
+    text-align: center;
+    padding: 12px;
+    .temas{
+        z-index: 1000;
+        background-color:$background_header;
+        position:fixed;
+        left: 0px;
+        top: 0px;
+        padding:.3em;
+        color:$color_header;
+        line-height: 1;
+    }
 }
-header .temas {
-  z-index: 1000;
-  background-color: var(--background_header);
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  padding: 0.3em;
-  color: var(--color_header);
-  line-height: 1;
-}
-
+*/
 .footer {
   height: 110px;
   background-color: var(--background_footer);
@@ -243,6 +227,18 @@ p.Letra-capital::first-letter {
   justify-content: space-between;
 }
 
+.cita .card {
+  /* Establece una escala inicial del 1 (sin zoom) */
+  transform: scale(1);
+  /* Transición suave para un efecto de zoom gradual */
+  transition: transform 0.3s ease;
+}
+.cita .card:hover {
+  /* Aplica un zoom del 150% al pasar el puntero del mouse */
+  transform: scale(1.1);
+  z-index: 2000;
+}
+
 .card-body {
   background: rgb(46, 43, 43);
   color: white;
@@ -298,11 +294,25 @@ p.Letra-capital::first-letter {
   font-family: The California;
   src: url(../fuentes/TheCalifornia.ttf);
 }
+.frases {
+  padding: 30px;
+}
 .frases h1, .frases h2,
 .frases p {
   font-family: The California;
   font-size: 50px;
   text-shadow: 1px 2px 0px white;
+}
+.frases .fc {
+  /* escala inicial del 1 (sin zoom) */
+  transform: scale(1);
+  /* Transición suave para un efecto de zoom gradual */
+  transition: transform 0.3s ease;
+}
+.frases .fc:hover {
+  /* Aplica un zoom al pasar el puntero del mouse */
+  transform: scale(1.04);
+  z-index: 2000;
 }
 
 /*Estilos Frases fin*/

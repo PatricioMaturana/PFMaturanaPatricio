@@ -1,8 +1,8 @@
 /*Declaración de variables, las cuales entregaran los colores de acuerdo al tema de fondo seleccionado.*/
-html[data-theme=dark] {
+html[data-theme=normal] {
     --background_body:rgb(46, 43, 43);
     --background_header:rgb(46, 43, 43); 
-    --background_footer:#040D12;/*ECCDB4*/
+    --background_footer:#040D12;
     --background_nav:#040D12;
     --background_side:rgb(46, 43, 43);
     --background_side_trasparencia:rgba(51, 51, 51, 0.562);
@@ -13,21 +13,5 @@ html[data-theme=dark] {
     --color_form_contacto:red;
     --color_header:white;
     --border_menu:white;
-    --background_menu:black;
-}
-html[data-theme=light] {
-    --background_body:white;
-    --background_header:white;/*#9AC5F4;*/
-    --background_footer:#FFEEBB;
-    --background_nav:#FFEEBB;
-    --background_side:#FFEEBB;
-    --background_side_trasparencia:rgba(51, 51, 51, 0.562);
-    --background_form_contacto:#FFEEBB;
-    --color_nav:#450703;
-    --color_footer:#450703;
-    --color_borde:#450703;
-    --color_form_contacto:black;
-    --color_header:black;
-    --border_menu:#450703;
     --background_menu:black;
 }

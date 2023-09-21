@@ -22,12 +22,12 @@ body {
     /* background-color: $background_body;*/
     background-image: linear-gradient($background_body, hwb(39 16% 45%), $background_body);/*$background_body;*/
     color: #000;
-    font-family: serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', ;
+    font-family: serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     text-shadow: 1px 1px 1px black;
     /* background: radial-gradient(circle, rgb(46, 43, 43),$background_body,rgb(108, 129, 66), rgb(77, 42, 36),$background_body);*/
     background: radial-gradient(circle,black,rgb(176, 122, 36),rgb(176, 122, 36),black,$background_body);
 }
-
+/*
 header{
     text-align: center;
     padding: 12px;
@@ -42,7 +42,7 @@ header{
         line-height: 1;
     }
 }
-
+*/
 .footer {
     height: 110px;
     background-color: $background_footer;
