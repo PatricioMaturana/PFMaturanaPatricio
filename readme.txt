@@ -51,8 +51,8 @@ Para la entrega final se realizó lo siguiente:
 11.	En el FTP FileZilla se crea sitio y se deja linkiado a la cuenta FTP proporcionada por infinityfree.com, así subir el proyecto entrega final.
 12.	La URL del sitio proyecto final, hosteado en infinityfree.com es http://pfmaturana.42web.io
 13.	Este es el repositorio público del proyecto en github:
-	https://github.com/PatricioMaturana/PreEntrega3MaturanaPatricio.git
+	https://github.com/PatricioMaturana/PFMaturanaPatricio
 14.	Este es el GitHub Pages:
-	https://patriciomaturana.github.io/PreEntrega3MaturanaPatricio/
+	https://patriciomaturana.github.io/PFMaturanaPatricio/
 
 	
